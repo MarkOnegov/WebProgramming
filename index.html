@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт туристической компании</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="body-top">
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-3">
+                    <img src="./image/logo.png" alt="LOGO" id="logo">
+                </div>
+                <div class="col-9 d-flex">
+                    <h1>
+                        Путешествуйте с нами!
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <div id="menu">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a href="./index.html" class="flex-sm-fill text-sm-center nav-link">Главная</a>
+                <a href="./turs.html" class="flex-sm-fill text-sm-center nav-link">Наши туры</a>
+                <a href="./contacts.html" class="flex-sm-fill text-sm-center nav-link">О нас</a>
+            </nav>
+        </div>
+        <main class="flex">
+            <div class="row">
+                <div class="col">
+                    <h2>Наши акции</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card tour">
+                        <img src="./image/crimea.jpg" class="card-img-top" alt="Крым">
+                        <div class="card-body">
+                            <h5 class="card-title">Отдых без забот в Крыму</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non
+                                amet saepe quae excepturi quasi mollitia illum, alias necessitatibus nisi consequuntur
+                                eligendi laborum repudiandae neque?</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#aboutCrimea">
+                                Подробнее об акции
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card tour">
+                        <img src="./image/caucasus.jpg" class="card-img-top" alt="Кавказ">
+                        <div class="card-body">
+                            <h5 class="card-title">Свежий воздух Кавказа</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                                repudiandae perferendis vero optio cumque amet ipsam distinctio, assumenda dolores
+                                officia, nemo alias. Ullam, sint ratione.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#aboutCaucasus">
+                                Подробнее об акции
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card tour">
+                        <img src="./image/altai.jpg" class="card-img-top" alt="Алтай">
+                        <div class="card-body">
+                            <h5 class="card-title">Невероятные красоты Алтая</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga repellat
+                                doloribus ut explicabo iusto. Sed soluta culpa alias consequatur eos harum quos,
+                                molestiae voluptatibus libero.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#aboutAltai">
+                                Подробнее об акции
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-primary btn-lg btn-block mt-5" data-toggle="modal"
+                        data-target="#costCalculation">Расчитать стоимость</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="row">
+                <div class="col">Это сайт, предназначенный для обучения</div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal fade" id="aboutCaucasus" tabindex="-1" role="dialog" aria-labelledby="aboutCaucasusLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutCaucasusLabel">
+                        Подробнее об акции: Свежий воздух Кавказа
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo inventore veniam excepturi
+                        est nisi iusto recusandae unde non? Autem libero assumenda deleniti perspiciatis sapiente
+                        veniam doloremque veritatis. In reiciendis iure animi neque aliquam quis aperiam quod
+                        tempore fuga ullam repudiandae at esse velit sapiente consequuntur sunt mollitia dolore, ad
+                        obcaecati.
+                    </p>
+                    <img src="./image/caucasus.jpg" class="img-fluid rounded" alt="Кавказ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aboutCrimea" tabindex="-1" role="dialog" aria-labelledby="aboutCrimeaLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutCrimeaLabel">
+                        Подробнее об акции: Отдых без забот в Крыму
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt minima necessitatibus
+                        neque sunt sed, at rem officia magni nemo culpa modi. Architecto dolore rerum porro iusto
+                        sint tempora provident culpa non quas fugiat nemo laboriosam accusamus temporibus voluptatem
+                        dolor corrupti, soluta ducimus consectetur repellendus earum dignissimos et perferendis
+                        blanditiis. Sapiente!
+                    </p>
+                    <img src="./image/crimea.jpg" class="img-fluid rounded" alt="Крым">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="aboutAltai" tabindex="-1" role="dialog" aria-labelledby="aboutAltaiLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutAltaiLabel">
+                        Подробнее об акции: Невероятные красоты Алтая
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui numquam veritatis at totam
+                        asperiores animi accusantium obcaecati autem expedita a quasi magnam architecto, molestiae
+                        voluptatibus quaerat fugiat corrupti aperiam natus tenetur debitis? Voluptatum id fugiat
+                        veritatis quo? Excepturi at dignissimos assumenda hic voluptate nulla similique magnam
+                        labore? Incidunt, illum.
+                    </p>
+                    <img src="./image/altai.jpg" class="img-fluid rounded" alt="Алтай">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="costCalculation" tabindex="-1" role="dialog" aria-labelledby="costCalculationLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="costCalculationLabel">
+                        Расчёт стоимости
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="costCalculationForm">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="tourSelect">Тур</label>
+                            </div>
+                            <select class="custom-select" id="tourSelect">
+                                <option selected disabled>Выберите тур...</option>
+                                <option value="1">Свежий воздух Кавказа</option>
+                                <option value="2">Отдых без забот в Крыму</option>
+                                <option value="3">Невероятные красоты Алтая</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="dateOfTour">Выберите дату</span>
+                            </div>
+                            <input type="date" class="form-control" aria-describedby="dateOfTour">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="quantityOfPeople">Выберите колличество
+                                    участников</span>
+                            </div>
+                            <input type="number" class="form-control" aria-describedby="quantityOfPeople" min="1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="email">Ваш Email</span>
+                            </div>
+                            <input type="email" class="form-control" aria-describedby="email" min="1">
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="submit">Расчитать</button>
+                    </div>
+                    <div class="costCalculationOutput">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
